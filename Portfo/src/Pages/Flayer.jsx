@@ -1,8 +1,8 @@
 import "./Flayer.css";
 import ProjectShowcase from "../components/ProjectShowcase";
-import Flaye1 from "../assets/Flay1.jpg";
-import Flaye2 from "../assets/Flaya2.jpg";
-import Flaye3 from "../assets/Flaya3.jpg";
+import Flaye1 from "../assets/flay1.jpg";
+import Flaye2 from "../assets/flaya2.jpg";
+import Flaye3 from "../assets/flaya3.jpg";
 
 const SOURCE_URL = "https://github.com/kisimoniaubain";
 const LIVE_URL = "https://www.instagram.com/soldado0012/?hl=en";
