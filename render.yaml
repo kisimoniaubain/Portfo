@@ -3,5 +3,5 @@ services:
     runtime: static
     name: portfo-soldado
     rootDir: Portfo
-    buildCommand: cd Portfo && npm install && npm run build
-    staticPublishPath: Portfo/dist
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
