@@ -1,10 +1,10 @@
 services:
   - type: web
-    env: static
+    runtime: static
     name: portfo-soldado
     rootDir: Portfo
     buildCommand: npm install && npm run build
-    staticPublishPath: dist
+    staticPublishPath: Portfo/dist
     routes:
       - type: rewrite
         source: /*
