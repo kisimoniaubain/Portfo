@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.web{
+    opacity: 0;
+    transform: translateY(30px);  
+    animation: fadeSlideIn 1.2s forwards;
+    animation-delay: 0.50s;  
+    
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.webcolum{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+.coli{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+.webcolum1 i{
+    color: black;
+    font-size: 65px;
+    background-color: rgba(243, 220, 194, 0.377);
+    padding: 25px;
+    width: 130px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.webcolum1 i:hover{
+       transform: scale(1.1,1.1);
+    transition-duration: 0.6s;
+}
+.webcolum1 h4{
+    margin-top: 20px;
+    color: rgb(243, 220, 194);
+}
+.webcolum1 p{
+    margin-top: 15px;
+    color: rgb(248, 248, 247);  
+}
+.webcolum2{
+    display: flex;
+}
+.row{
+    display: flex;
+}
+.progress-card{
+    padding: 12% 10% 10% 15%;
+    background-color: rgba(243, 220, 194, 0.089);
+    text-align: center;
+    border-radius: 10%;
+    width: 9pc;
+    /* margin-left: 70px; */
+    margin-top: 15px;
+}
+.progress-card:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.6s;
+    border: 1px solid rgba(243, 220, 194, 0.295);
+}
+.circular-progress{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: conic-gradient(#065fbe 3.6deg, rgba(243, 220, 194, 0.658) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.service-card{
+    border: 3px solid #065fbe;
+    box-shadow: 0 0 20px rgb(83, 83, 83);
+}
+.progress-value{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.html-progress{
+    color: #fca61f;
+}
+.javascript-progress{
+    color: #6f34fe;
+}
+.php-progress{
+    color: #20c997;
+}
+.reactjs-progress{
+    color: #3f396d;
+}
+.text{
+    font-size: 1.2rem;
+    font-weight: 500;   
+    color: black;
+}
+.exploration{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.exploration button{
+  width: 16pc;
+  color: rgb(243, 220, 194);
+  background-color: transparent;
+  border: 1px solid rgba(243, 220, 194, 0.534);
+  font-family: 'Mountains of Christmas', cursive;
+  padding: 10px;
+  border-radius: 20px;
+  transform: translateY(0);  /* start normal */
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  font-size: 15px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.exploration button:focus,
+.exploration button:hover {
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    transform: scale(1.05);
+    border: none;
+    background-color: rgba(243, 220, 194, 0.377);
+}
+
+@media (max-width: 768px) {
+    .webcolum,
+    .coli,
+    .webcolum2,
+    .row {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .webcolum1 i {
+        font-size: 40px;
+        width: 72px;
+        padding: 14px;
+        margin-top: 10px;
+    }
+
+    .progress-card {
+        width: min(100%, 220px);
+        padding: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .circular-progress {
+        height: 100px;
+        width: 100px;
+    }
+
+    .circular-progress::before {
+        height: 72px;
+        width: 72px;
+    }
+
+    .exploration button {
+        width: min(100%, 240px);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .icontext {
+        text-align: center;
+    }
+}

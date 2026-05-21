@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.graph{
+    opacity: 0;
+    transform: translateY(30px);  
+    animation: fadeSlideIn 1.2s forwards;
+    animation-delay: 0.50s;  
+    
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.graphcolum{
+    display: flex;
+    gap: 10pc;
+    align-items: center;
+}
+.graphcolum2{
+    text-align: start;
+}
+.graphcolum2 h3{
+    color: wheat;
+}
+.graphcolum2 p{
+    margin-top: 15px;
+    color: rgba(255, 254, 253, 0.692);  
+}
+.graphcolum1{
+    display: flex;
+}
+#marg{
+  margin-left: 50px;
+}
+.graphprogress-card{
+    padding: 12% 10% 10% 15%;
+    background-color: rgba(243, 220, 194, 0.089);
+    text-align: center;
+    border-radius: 10%;
+    width: 9pc;
+    /* margin-left: 70px; */
+    /* margin: 10px; */
+    margin-top: 15px;
+}
+.graphprogress-card:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.6s;
+    border: 1px solid rgba(243, 220, 194, 0.295);
+}
+.graphcircular-progress{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: conic-gradient(#065fbe 3.6deg, rgba(243, 220, 194, 0.658) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.graphcircular-progress::before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.service-card{
+    border: 3px solid #065fbe;
+    box-shadow: 0 0 20px rgb(83, 83, 83);
+}
+.graphprogress-value{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.html-progress{
+    color: #fca61f;
+}
+.javascript-progress{
+    color: #6f34fe;
+}
+.php-progress{
+    color: #20c997;
+}
+.reactjs-progress{
+    color: #3f396d;
+}
+.text{
+    font-size: 1.2rem;
+    font-weight: 500;   
+    color: rgb(248, 248, 247);
+}
+
+@media (max-width: 768px) {
+    .graphcolum,
+    .graphcolum1,
+    .row {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .graphcolum {
+        gap: 20px;
+    }
+
+    #marg {
+        margin-left: 0;
+    }
+
+    .graphprogress-card {
+        width: min(100%, 220px);
+        padding: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .graphcircular-progress {
+        height: 100px;
+        width: 100px;
+    }
+
+    .graphcircular-progress::before {
+        height: 72px;
+        width: 72px;
+    }
+
+    .graphcolum2 {
+        text-align: center;
+    }
+
+    .graphcolum2 ul {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+}

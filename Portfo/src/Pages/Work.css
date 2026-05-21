@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.works{
+    padding-top: 5pc;
+    opacity: 0;
+    transform: translateY(30px);  
+    animation: fadeSlideIn 1.2s forwards;
+    animation-delay: 0.25s;  
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.allworks h2{
+    color: rgb(243, 220, 194);
+    font-family: 'Mountains of Christmas', cursive;
+}
+.allworks p{
+    color: rgba(255, 254, 253, 0.692);
+    margin-top: 30px;
+}
+.worklink{
+   text-align: center;
+}
+.worklink li{
+    opacity: 0;
+    transform: translateY(30px);  
+    animation: fadeSlideIn 1.2s forwards;
+    animation-delay: 0.30s;
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+.worklink a{
+ text-decoration: none;
+  font-weight: bold;
+  color: rgb(243, 220, 194);
+  font-family: 'Mountains of Christmas', cursive;
+  padding: 10px;
+  border-radius: 20px;
+  
+  display: inline-block;
+  text-align: center;
+    
+
+  transform: translateY(0);  /* start normal */
+  transition: transform 0.4s ease, background-color 0.4s ease;
+
+}
+.worklink a:focus,
+.worklink a:hover {
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    transform: scale(1.05);
+    background-color: rgba(243, 220, 194, 0.377);
+}
+.worklink ul{
+    list-style: none;
+    display: flex;
+    margin-top: 3pc;
+    margin-left: 18pc;
+    margin-bottom: 40px;
+
+}
+.Gallary h2{
+    margin-top: 35px;
+    text-align: center;
+    color: rgb(243, 220, 194);
+    font-family: 'Mountains of Christmas', cursive;
+}
+.work-page{
+        opacity: 0;
+    transform: translateY(30px);  
+    animation: fadeSlideIn 1.2s forwards;
+    animation-delay: 0.25s;  
+}
+.work-page h2{
+    color: rgb(243, 220, 194);
+    font-family: 'Mountains of Christmas', cursive;
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.testimonial{
+    display: flex;
+    gap: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+    align-items: center;
+}
+.testimg img{
+   width: 120px;
+}
+.testtext h2{
+   color: aliceblue;
+}
+.testtext p{
+   font-size: 16px;
+   color: rgba(255, 254, 253, 0.692);
+   font-style: italic;
+}
+.testtext h4{
+    color: rgb(137, 240, 240);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.testbtn{
+    margin-left: 25pc;
+}
+.testbtn button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    width: 50px;
+    padding: 8px;
+    border: 1px solid  rgba(204, 199, 189, 0.479);
+    background-color: transparent;
+    color:  rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(0);  /* start normal */
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    display: inline-block;
+    font-weight: bold;
+}
+.testbtn button:hover {
+    color: black;
+    transform: scale(1.05);
+    background-color: rgba(243, 220, 194, 0.377);
+    
+}
+
+/* Next slide from right */
+.testimonial.right {
+  animation: slideRight 1.5s ease;
+}
+
+/* Previous slide from left */
+.testimonial.left {
+  animation: slideLeft 1.5s ease;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .works {
+    padding-top: 28px;
+  }
+
+  .worklink ul {
+    margin-left: 0;
+    margin-top: 18px;
+    margin-bottom: 24px;
+    padding-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    margin: 24px 0 0;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .testbtn {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .testbtn button {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+
+
+

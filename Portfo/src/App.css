@@ -1,0 +1,304 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10pc;
+  padding-right: 10pc;
+  background-color: black;
+  background-size: cover;   
+  background-position: center;   
+  height: 100vh;
+}
+
+#root {
+    width: 100%;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.route-stage {
+    animation: routeFade 380ms ease;
+}
+
+@keyframes routeFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-head {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.section-head h3 {
+    color: rgb(243, 220, 194);
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.section-head p {
+    color: rgba(255, 254, 253, 0.74);
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.showcase-wrap {
+    width: 100%;
+}
+/* ==========================
+   Mobile devices (max-width: 767px)
+========================== */
+@media (max-width: 767px) {
+
+    body {
+        padding-left: 16px;
+        padding-right: 16px;
+        overflow-x: hidden;
+    }
+
+    .Sec1,
+    .whycolum,
+    .contcolum,
+    .testimonial,
+    .graphcolum,
+    .webcolum,
+    .coli,
+    .portcolum1,
+    .portcolum2,
+    .sitecolum1,
+    .sitecolum2,
+    .flayecolum1,
+    .logocolum,
+    .brandcolum,
+    .postcolum,
+    .webcolum2,
+    .row,
+    .graphcolum1 {
+        flex-direction: column;
+        width: 100%;
+        gap: 14px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .Twolinks ul,
+    .worklink ul,
+    .workli ul,
+    .Graphicworkli ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Sec1,
+    .whycolum,
+    .contcolum,
+    .work-page {
+        text-align: center;
+    }
+
+    .colum1 h1 {
+        font-size: 34px;
+    }
+
+    .colum2 img,
+    .whycolum1 img {
+        width: min(100%, 320px);
+    }
+
+    .portcolum,
+    .sitecolum {
+        padding-left: 0;
+    }
+
+    .testbtn {
+        margin-left: 0;
+    }
+
+    .testimonial {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 24px;
+    }
+
+    .contcolum {
+        margin-left: 0;
+    }
+
+    .exploration button {
+        width: min(100%, 260px);
+    }
+
+        .section-head h3 {
+            font-size: 26px;
+        }
+
+    .progress-card,
+    .graphprogress-card {
+        width: min(100%, 220px);
+        padding: 14px;
+    }
+
+    .portcolum1 img,
+    .portcolum2 img,
+    .sitecolum1 img,
+    .sitecolum2 img,
+    .flayecolum1 img,
+    .brandcolum1 img,
+    .brandcolum2 img,
+    .brandcolum3 img,
+    .logocolum1 img,
+    .logocolum2 img,
+    .logocolum3 img,
+    .postcolum1 img,
+    .postcolum2 img,
+    .postcolum3 img {
+        width: 100%;
+        max-width: 320px;
+        margin: 0;
+    }
+
+    footer {
+      position: static;
+    }
+}
+
+/* ==========================
+   Tablet devices (768px - 1024px)
+========================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        padding-left: 32px;
+        padding-right: 32px;
+        overflow-x: hidden;
+    }
+
+    .Sec1,
+    .whycolum,
+    .contcolum,
+    .webcolum,
+    .graphcolum {
+        gap: 24px;
+    }
+
+    .colum1 h1 {
+        font-size: 40px;
+    }
+
+    .colum2 img {
+        width: min(100%, 420px);
+    }
+
+    .Twolinks ul,
+    .worklink ul,
+    .workli ul,
+    .Graphicworkli ul {
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding-left: 0;
+    }
+
+    .testimonial {
+        margin-left: 0;
+        margin-right: 0;
+        gap: 20px;
+    }
+
+    .testbtn {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .portcolum,
+    .sitecolum {
+        padding-left: 0;
+    }
+
+    .portcolum1,
+    .portcolum2,
+    .sitecolum1,
+    .sitecolum2,
+    .flayecolum1,
+    .brandcolum,
+    .logocolum,
+    .postcolum {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .portcolum1 img,
+    .portcolum2 img,
+    .sitecolum1 img,
+    .sitecolum2 img,
+    .flayecolum1 img,
+    .brandcolum1 img,
+    .brandcolum2 img,
+    .brandcolum3 img,
+    .logocolum1 img,
+    .logocolum2 img,
+    .logocolum3 img,
+    .postcolum1 img,
+    .postcolum2 img,
+    .postcolum3 img {
+        width: min(46%, 280px);
+        margin: 0;
+    }
+
+    .webcolum2,
+    .graphcolum1,
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .progress-card,
+    .graphprogress-card {
+        width: min(44vw, 220px);
+        padding: 14px;
+    }
+}

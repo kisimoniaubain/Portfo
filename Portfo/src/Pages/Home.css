@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Sec1{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+.colum1{
+    color: white;
+
+}
+.colum1 h4{
+    padding-bottom: 25px;
+    padding-top: 3pc;
+    color: rgb(243, 220, 194);
+    font-family: 'Mountains of Christmas', cursive;
+}
+.colum1 h1{
+    color: rgb(243, 220, 194);
+    font-size: 49px;
+    opacity: 0;
+    transform: translateY(30px);  
+    animation: fadeSlideIn 1.2s forwards;
+    animation-delay: 0.50s;  
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.colum1 h2{
+    margin-top: 10px;
+    font-family: 'Mountains of Christmas', cursive;
+    opacity: 0;
+    transform: translateY(30px);  
+    animation: fadeSlideIn 1.2s forwards;
+    animation-delay: 0.90s;  
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.learn-more-btn{
+    background-color: transparent;
+    font-family: 'Mountains of Christmas', cursive;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 8pc;
+    margin-top: 30px; 
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);  
+    animation: fadeSlideIn 1.2s forwards;
+    animation-delay: 0.30s;  
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.learn-more-btn:hover{
+    color: black;
+    border: 1px solid rgb(224, 194, 160);
+    font-weight: bold;
+    transform: scale(1.05);
+    background-color: rgba(243, 220, 194, 0.377);
+}
+#paragraph {
+    padding-top: 20px;
+    opacity: 0;                 /* Start hidden */
+    transform: translateX(100px);  /* Start from right */
+    animation: fadeSlideIn 1.2s forwards;
+    animation-delay: 0.30s;  
+    color: rgba(255, 254, 253, 0.692);
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;                 /* Fade in */
+    transform: translateX(0);   /* Move to original position */
+  }
+}
+.colum2 img {
+  width: 30pc;
+  padding-top: 3pc;
+  /* Animation */
+  opacity: 0;
+  transform: translateY(30px);  
+  animation: fadeSlideIn 1.2s forwards;
+  animation-delay: 0.30s;  
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ .cursor {
+  display: inline-block;
+  width: 2px;
+  background: white;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

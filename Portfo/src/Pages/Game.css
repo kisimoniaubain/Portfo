@@ -1,0 +1,43 @@
+.game-page {
+	padding: 20px 0 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.game-card {
+	width: min(100%, 780px);
+	border: 1px solid rgba(243, 220, 194, 0.35);
+	border-radius: 14px;
+	padding: 24px;
+	background: rgba(243, 220, 194, 0.08);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.game-card h2 {
+	color: rgb(243, 220, 194);
+	margin-bottom: 14px;
+	font-family: 'Mountains of Christmas', cursive;
+}
+
+.game-card p {
+	color: rgba(255, 254, 253, 0.82);
+	line-height: 1.7;
+	margin-bottom: 14px;
+}
+
+.game-card ul {
+	list-style: none;
+	padding: 0;
+}
+
+.game-card li {
+	color: rgba(255, 254, 253, 0.88);
+	padding: 8px 0;
+	border-top: 1px solid rgba(243, 220, 194, 0.2);
+}
+
+@media (max-width: 768px) {
+	.game-card {
+		padding: 16px;
+	}
+}

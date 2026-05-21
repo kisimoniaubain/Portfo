@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.allcont{
+  margin-top: 40px;
+  margin-bottom: 80px;
+      opacity: 0;
+    transform: translateY(30px);  
+    animation: fadeSlideIn 1.2s forwards;
+    animation-delay: 0.25s;  
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ .contcolum{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  gap: 40px;
+ }
+ .contcolum1 h2{
+  font-family: 'Mountains of Christmas', cursive;
+  color: rgb(228, 188, 139);
+  margin-bottom: 50px;
+ }
+ .icontext1{
+  display: flex;
+  color: rgb(175, 170, 164);
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+ }
+ .contcolum2 {
+  max-width: 450px;       
+  margin: 50px auto;      
+  padding: 30px 25px;     
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1); 
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;       /* IMPORTANT */
+  overflow: hidden;         /* keeps blur inside border radius */
+}
+.contcolum2 input,
+.contcolum2 textarea {
+  width: 92%;
+  height: 5px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc46;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: 0.3s;
+  color: wheat;
+  background-color: transparent;
+}
+
+.contcolum2 input:focus,
+.contcolum2 textarea:focus {
+  border-color: rgba(209, 201, 187, 0.801);
+  box-shadow: 0 0 5px rgba(67,158,255,0.4);
+}
+.contcolum2 textarea {
+  resize: vertical;
+}
+.contcolum2 button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(122, 114, 98);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contcolum2 button:hover {
+  background-color: wheat;
+  transform: translateY(-2px);
+}
+
+.contcolum2 button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-feedback {
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.form-feedback.success {
+  color: #c2f2cf;
+}
+
+.form-feedback.error {
+  color: #ffc9c9;
+}
+
+@media (max-width: 600px) {
+  .allcont {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .contcolum {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .icontext1 {
+    justify-content: center;
+  }
+
+  .contcolum2 {
+    padding: 20px 15px;
+    margin: 20px 10px;
+    max-width: 100%;
+  }
+
+  .contcolum2 button {
+    font-size: 15px;
+  }
+}
+.map-container {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 12px;
+  overflow: hidden;
+}

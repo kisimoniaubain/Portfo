@@ -1,0 +1,6 @@
+services:
+  - type: static
+    name: portfo
+    rootDir: Portfo
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
