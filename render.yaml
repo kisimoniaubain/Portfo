@@ -1,5 +1,6 @@
 services:
-  - type: static
+  - type: web
+    env: static
     name: portfo-soldado
     rootDir: Portfo
     buildCommand: npm install && npm run build
